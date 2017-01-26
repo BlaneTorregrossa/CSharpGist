@@ -33,7 +33,7 @@ a multiple of 10. Then print all the remaining numbers to the console.
         //    {
 
 
-        //        Gist.Remove(i);    // No idea why Parentheses around i can't work instead of []
+        //        Gist.Remove(i);    
 
         //    }
 
@@ -113,7 +113,12 @@ namespace CSharpGist
         static void Main(string[] args)
         {
 
-            // 
+            Gene g = new Gene("11111111");
+            string temp = "";
+            foreach (char i in g.Tail)
+            {
+                temp += Invert(i); 
+            }
            
         }
 
